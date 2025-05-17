@@ -1,0 +1,94 @@
+.menu-form-container {
+  text-align: center;
+  margin: 2rem 0;
+}
+
+.open-form-btn {
+  padding: 10px 16px;
+  background-color: #43a047;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.open-form-btn:hover {
+  background-color: #2e7d32;
+}
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+  padding: 1rem;
+}
+
+.modal-box {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 12px;
+  width: 100%;
+  max-width: 400px;
+  box-shadow: 0 6px 20px rgba(0, 128, 0, 0.15);
+}
+
+.menu-form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.menu-form input,
+.menu-form textarea {
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #c8e6c9;
+  font-size: 1rem;
+  resize: none;
+}
+
+.button-row {
+  display: flex;
+  gap: 10px;
+  margin-top: 1rem;
+}
+
+.btn {
+  flex: 1;
+  padding: 10px;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.btn.green {
+  background-color: #4caf50;
+  color: white;
+}
+
+.btn.cancel {
+  background-color: #ccc;
+  color: #333;
+}
+
+/* Responsive Modal */
+@media (max-width: 480px) {
+  .modal-box {
+    padding: 1rem;
+  }
+
+  .menu-form input,
+  .menu-form textarea {
+    font-size: 0.95rem;
+  }
+}
