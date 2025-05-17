@@ -24,5 +24,5 @@ Make sure the following tools are installed:
 ### 📥 1. Clone the Repository
 
 ```bash
-git clone 
+git clone https://github.com/FoxlyTenTen/QuickBite.git
 npm install 
