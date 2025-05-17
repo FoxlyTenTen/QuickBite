@@ -5,13 +5,15 @@ import { app } from '../../firebaseConfig';
 
 const db = getFirestore(app);
 const containerStyle = { width: '100%', height: '400px' };
+const googleAPIKEY = import.meta.env.VITE_GOOGLE_MAPS_API_KEY;
+
 
 export default function TrackOrder({ orderId }) {
   const [location, setLocation] = useState(null);
   const mapRef = useRef(null);
 
   const { isLoaded } = useJsApiLoader({
-    googleMapsApiKey: 'AIzaSyCM44BLQnnma6HSzo3JM4onKyo9U_1Lr7Q' // Replace with secure key
+    googleMapsApiKey:  googleAPIKEY// Replace with secure key
   });
 
   useEffect(() => {
